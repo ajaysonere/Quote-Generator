@@ -7,7 +7,7 @@ function Quotes(){
     const [author , setAuthor] = useState('');
 
     const getQuote = async()=>{
-        const res = await axios.get('http://localhost:3800/?timestamp='+Date.now() ,{
+        const res = await axios.get('http://localhost:4800/?timestamp='+Date.now() ,{
             crossdomain:true
         });
         setQuote(res.data.text);

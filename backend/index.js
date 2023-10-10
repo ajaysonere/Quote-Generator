@@ -2,10 +2,14 @@ import  express from "express";
 import cors from 'cors';
 import Quote from 'inspirational-quotes';
 
-const PORT = 3800 || 4500;
+const PORT = 4800 || 4500;
  
 const app = express();
+
+
 app.use(cors());
+
+
 app.use(express.json());
 
 app.get('/' , (req , res)=>{
